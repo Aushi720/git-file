@@ -1,6 +1,5 @@
 *{
-  box-sizing: border-box; 
-
+  box-sizing: border-box;
 }
 /* shared style */
 .display-flex{
@@ -171,6 +170,27 @@ margin-bottom: 20px;
  }
  .features-architect img{
     width: 100%;
+ }
+ /* footer seaction */
+ .footer-context{
+    margin-top: 70px;
+     max-width: 1440px;
+    max-height: 100px;
+    margin-left: 240px;
+    border-radius: 8px;
+background: rgb(255, 244, 231);
+margin-bottom: 50px;
+ }
+ .describe{
+    width: 620px;
+    height: 23px;
+    padding: 30px 45px;
+    margin: 0 auto;
+    color: #424242;
+    font-weight: 500;
+    font-size: 1.25rem;
+   justify-content: center;
+    text-align: center;
  }
 /* responsive meadia quarey */
  @media screen and (max-width:576){
