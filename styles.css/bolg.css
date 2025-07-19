@@ -13,6 +13,11 @@ main{
 main > section{
     margin-top: 130px;
 }
+
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 /* dark-2 */
 .text-gray{
     color:#424242 ;
@@ -86,13 +91,72 @@ main > section{
   margin-left: 130px;
   max-width: 530px;  
 }
-.featue-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-}
 #quick-list{
     font-weight: 500;
 }
+/* some fact-related style */
+.fact-card{
+    border: 2px solid #FF900E;
+    width: 240px;
+    height: 230px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fact-description{
+    max-width: 540px;
+}
+.fact-continer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+/* sponsor releated style */
+ .sponsor-info{
+    max-width: 542px;
+    max-height: 129px;
+    margin: 50px auto;
+    text-align: center;
+ }
+ .sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+ }
+ .sponsor-companies img{
+    filter: grayscale(100%);
+ }
+ /* features seaction realted style */
+ .features{
+    gap: 92px;
+ }
+ #feacture-section-title{
+    border-left: 2px solid #FF900E;
+    padding-left: 21px;
+ }
+ .feature-card, .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+ }
+ .feature-card{
+    border-radius: 8px;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+background: rgb(255, 255, 255);
+padding: 30px;
+margin-bottom: 20px;
+ }
 /* responsive meadia quarey */
  @media screen and (max-width:576){
     .nabvar,
@@ -103,16 +167,26 @@ main > section{
     .team-img-continer{
         grid-template-columns: repeat(1, 1fr);
     }
+    .fact-continer, .sponsor-companies{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 24px;
+    }
     .our-features{
         margin-left: 20px;
     }
+    .sponsor-companies{
+        grid-template-columns: 1fr;
+
+    }
  }
+
  /* Meadium size device */
  @media screen and (min-width: 576px) and (max-width: 992px) {
     .teams{
       flex-direction: column;
     }
    .our-features{
-    margin-left: 50px;
+    margin: 50px auto;
    } 
  }
